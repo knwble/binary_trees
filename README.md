@@ -1,4 +1,5 @@
 # Project: C - Binary trees
+This project on Binary tree implements binary, binary search, AVL, and Max Binary Heap trees.
 
 ## Header File :file_folder:
 
