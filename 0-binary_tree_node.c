@@ -1,4 +1,7 @@
 #include "binary_trees.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stddef.h>
 
 /**
  * binary_tree_node - Creates a new binary tree node.
@@ -9,19 +12,17 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	binary_tree_t *newNode;
+	binary_tree_t *new_node;
 
-	newNode = (binary_tree_t *)malloc(sizeof(binary_tree_t));
+	new_node = malloc(sizeof(binary_tree_t));
 
-	if (newNode == NULL)
-	{
+	if (new_node == NULL)
 		return (NULL);
-	}
 
-	newNode->parent = parent;
-	newNode->n = value;
-	newNode->left = NULL;
-	newNode->right = NULL;
+	new_node->n = value;
+	new_node->parent = parent;
+	new_node->left = NULL;
+	new_node->right = NULL;
 
-	return (newNode);
+	return (new_node);
 }
